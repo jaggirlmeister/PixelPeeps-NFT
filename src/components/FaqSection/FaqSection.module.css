@@ -1,0 +1,34 @@
+  
+  .container-hero {
+    background-image: url('../../../src/assets/background4.jpeg');
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .container-hero h2 {
+    font-size: 40px;
+    word-spacing: .4em;
+    font-family: 'Daydream';
+  }
+  
+  .txt_wrapper{
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+  }
+  
+  .overlay {
+  position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.2);
+    z-index: 1;
+  }

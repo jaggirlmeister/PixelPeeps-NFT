@@ -6,6 +6,7 @@ import {
   useBalance,
 } from "../../contexts/OnboardContext";
 import { truncateWeb3Address } from "../../services/onboard/helpers";
+import styles from './WalletClient.module.css';
 
 const WalletClient = () => {
   const onboard = useOnboard();
@@ -17,7 +18,7 @@ const WalletClient = () => {
     <div className="wallet-client">
       {!wallet.provider ? (
         <div>
-          <h4>Connect to Wallet!</h4>
+          <h4 className="pixeled-txt">Connect to Wallet!</h4>
           <p>Please connect your preferred wallet to use the app.</p>
         </div>
       ) : (
@@ -28,7 +29,7 @@ const WalletClient = () => {
             )}
           </div>
           <div>
-            <h4>Connected with {wallet.name}</h4>
+            <h4 className="pixeled-txt">Connected with {wallet.name}</h4>
             {address ? (
               <p>{truncateWeb3Address(address)}</p>
             ) : (

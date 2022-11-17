@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'Daydream';
+    src: local('Daydream'), url('../../../src/fonts/Daydream.ttf') format('truetype');
+  }
+  
+  .container-hero {
+      background-image: url('../../../src/assets/connect3.jpeg');
+      background-position: center;
+      background-size: cover;
+      height: 90vh;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+    }
+
+
+  .wallet-client {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 50px 0;
+    background-color: #000000a1;
+    border: 5px gray solid;
+    padding: 50px;
+    border-radius: 60px;
+    width: 300px;
+    height: 200px;
+  }
+  

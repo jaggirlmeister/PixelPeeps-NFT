@@ -1,12 +1,24 @@
 import React from "react";
-import WalletButton from "../components/WalletButton/WalletButton";
-import WalletClient from "../components/WalletClient/WalletClient";
+import Hero from "../components/Hero/Hero";
+import Footer from "../components/Footer/Footer";
+import NavBar from "../components/NavBar/NavBar";
+import ConnectWallet from "../components/ConnectWallet/ConnectWallet";
+import HowItWorks from "../components/HowItWorks/HowItWorks";
+import Carousel from "../components/Carousel/Carousel";
+import FaqSection from "../components/FaqSection/FaqSection";
 
 const Home = () => {
   return (
     <>
-      <WalletButton />
-      <WalletClient />
+    <NavBar />
+      <div className='homeContainer'>
+        <Hero />
+        <HowItWorks />
+        <ConnectWallet />
+        <FaqSection />
+        <Footer />
+      </div>
+      <Carousel />
     </>
   );
 };
